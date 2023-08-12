@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container d-flex pt-4 pb-3 ps-5 ">
+        <div class="logo d-flex align-items-center">
+            <img src="main-logo.png" height="40px" alt="">
+        </div>
+        <div class="search-bar">
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle"
+                    style="background-color: rgb(245, 243, 243); color:rgb(46, 46, 46);font-size:13px;font-weight:500;border:1px solid rgb(209, 207, 207)" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    ALL CATEGORIES
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Veggies</a></li>
+                    <li><a class="dropdown-item" href="#">Fruits</a></li>
+                    <li><a class="dropdown-item" href="#">Groceries</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="I'm Searching for...">
+                <i class="fa-solid fa-magnifying-glass ms-2 ps-2"></i>
+            </div>
+        </div>
+        <div class="content">
+            <span>8 800 332 65-66</span>
+                <p class="a">Support 24/7</p>
+        </div>
+        <div class="icon d-flex align-items-center" style="padding-left: 75px;">
+            <i class="fa-regular fa-user fa-lg px-3"></i>
+                <i class="fa-regular fa-heart fa-lg px-3"></i>
+                <i class="fa-solid fa-cart-shopping fa-lg px-3"></i>
+
+        </div>
+        <div class="para d-flex align-items-center" style="padding-left: 45px;">
+            <p class="cart" style="font-size: 14px;font-weight:500">Your Cart <br> $2650.59</p>
+        </div>
+    </div>
+    <!-- <div class="container py-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-2">
+                <img src="main-logo.png" width="170px">
+
+            </div>
+            <div class=" col-4">
+                <div class="search-bar">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle"
+                            style="background-color: rgb(241, 239, 239); color:rgb(46, 46, 46)" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ALL CATEGORIES
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Veggies</a></li>
+                            <li><a class="dropdown-item" href="#">Fruits</a></li>
+                            <li><a class="dropdown-item" href="#">Groceries</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="I'm Searching for...">
+                        <i class="fa-solid fa-magnifying-glass ms-2 ps-2"></i>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-2 ps-5">
+                <span>8 800 332 65-66</span>
+                <p class="a">Support 24/7</p>
+            </div>
+
+            <div class="col-3 ps-5">
+                <i class="fa-regular fa-user fa-lg px-3"></i>
+                <i class="fa-regular fa-heart fa-lg px-3"></i>
+                <i class="fa-solid fa-cart-shopping fa-lg px-3"></i>
+
+            </div>
+            <div class="col-1 ">
+                <p class="cart" style="font-size: 15px;">Your Cart <br> $2650.59</p>
+
+            </div>
+
+        </div>
+    </div> -->
+
+    <div class="con container-fluid pb-5 mb-3" style="background-color: rgb(250, 249, 249);">
+        <section class="slider_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="swiper card_slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="main1.png">
+                                        <div class="title">Active Summer with <br> juice milk 300ml</div>
+                                        <div class="text">
+                                           New arrivals with nature fruits,juice <br> milks, Essential for summer
+                                            <div class="button btn-s1">Shop Now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="main1.png">
+                                        <div class="title">Active Summer with <br> juice milk 300ml</div>
+                                        <div class="text">
+                                            New arrivals with nature fruits,juice <br> milks, Essential for summer
+                                            <div class="button btn-s1">Shop Now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="main1.png">
+                                        <div class="title">Active Summer with <br> juice milk 300ml</div>
+                                        <div class="text">
+                                            New arrivals with nature fruits,juice <br> milks, Essential for summer
+                                            <div class="button btn-s1">Shop Now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="main1.png">
+                                        <div class="title">Active Summer with <br> juice milk 300ml</div>
+                                        <div class="text">
+                                            New arrivals with nature fruits,juice <br> milks, Essential for summer
+                                            <div class="button btn-s1">Shop Now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="main1.png">
+                                        <div class="title">Active Summer with <br> juice milk 300ml</div>
+                                        <div class="text">
+                                            New arrivals with nature fruits,juice <br> milks, Essential for summer
+                                            <div class="button btn-s1">Shop Now</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="main1.png">
+                                        <div class="title">Active Summer with <br> juice milk 300ml</div>
+                                        <div class="text">
+                                            New arrivals with nature fruits,juice <br> milks, Essential for summer
+                                            <div class="button btn-s1">Shop Now</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="header4">
+                            <h2>20% SALE OFF</h2>
+                            <p>Synthetic seeds <br> Net 2.0 OZ</p>
+                            <div class="col-4">
+                                <div class="button btn-s">Shop Now</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container mt-5 pb-3">
+        <div class="row ">
+            <div class="col-3">
+                <h3>Browse by category</h3>
+
+            </div>
+            <div class="col-2 pt-2 d-flex">
+                <p style="color: rgb(85, 85, 86);font-size:14px;font-weight:600;" class="pe-2">All Categories</p><img src="arrow.png" class="pt-1"
+                    height="22px" alt="">
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="shadman-1 pt-3 mb-5 owl-carousel owl-theme">
+            <div class="item pt-3 pb-1" style="background-color: rgb(250, 246, 246);">
+                <img class="sh" src="fruit-vegetable.png">
+                <p class="text-center pt-2 pb-2" style="font-size: 15px;font-weight:600">Fruits & Vegetables</p>
+            </div>
+            <div class="item pt-3 pb-1" style="background-color: rgb(250, 246, 246);">
+                <img class="sh" src="bread-1.png">
+                <p class="text-center pt-2 pb-2" style="font-size: 15px;font-weight:600">Breads & sweets</p>
+            </div>
+            <div class="item pt-3 pb-1" style="background-color: rgb(250, 246, 246);">
+                <img class="sh" src="seafood.png">
+                <p class="text-center pt-2 pb-2" style="font-size: 15px;font-weight:600">Frozen Seafoods</p>
+            </div>
+            <div class="item pt-3 pb-1" style="background-color: rgb(250, 246, 246);">
+                <img class="sh" src="meat.png">
+                <p class="text-center pt-2 pb-2" style="font-size: 15px;font-weight:600">Raw Meats</p>
+            </div>
+            <div class="item pt-3 pb-1" style="background-color: rgb(250, 246, 246);">
+                <img class="sh" src="wine.png">
+                <p class="text-center pt-2 pb-2" style="font-size: 15px;font-weight:600">Drinks</p>
+            </div>
+            <div class="item pt-3 pb-1" style="background-color: rgb(250, 246, 246);">
+                <img class="sh" src="coffe.png">
+                <p class="text-center pt-2 pb-2" style="font-size: 15px;font-weight:600">Cofees and Teas</p>
+            </div>
+            <div class="item pt-3 pb-1" style="background-color: rgb(250, 246, 246);">
+                <img class="sh" src="milk.png">
+                <p class="text-center pt-2 pb-2" style="font-size: 15px;font-weight:600">Milk and Dairies</p>
+            </div>
+            <div class="item pt-3 pb-1" style="background-color: rgb(250, 246, 246);">
+                <img class="sh" src="pet-food.png">
+                <p class="text-center pt-2 pb-2" style="font-size: 15px;font-weight:600">Pet Foods</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5 pb-4">
+        <div class="row ">
+            <div class="col-3">
+                <h3>Featured Brands</h3>
+
+            </div>
+            <div class="col-2 d-flex pt-2">
+                <p style="color: rgb(85, 85, 86);font-size:14px;font-weight:600;" class="pe-2">All Offers</p> <img src="arrow.png" class="pt-1"
+                    height="22px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="features owl-carousel mb-5 owl-theme">
+            <div class="s item">
+                <img src="new-1.png">
+                <h3 class="pt-3" style="color: rgb(108, 109, 109);font-size:14px">CHIPSPOUCH</h3>
+                <h6>New Snacks Release.</h6>
+            </div>
+            <div class="s item">
+                <img src="new-2.png">
+                <h3 class="pt-3" style="color: rgb(108, 109, 109);font-size:14px">TEA PACK</h3>
+                <h6>Tea 100% Organic.</h6>
+
+            </div>
+            <div class="s item ">
+                <img src=new-3(2).png>
+                <h3 class="pt-3" style="color: rgb(108, 109, 109);font-size:14px">BREADBRAND</h3>
+                <h6>Britania Pack-30% off.</h6>
+            </div>
+            <div class="s item">
+                <img src=new-4.png>
+                <h3 class="pt-3" style="color: rgb(108, 109, 109);font-size:14px">FARMART</h3>
+                <h6>Fresh Chicken Meat.</h6>
+            </div>
+            <div class="s item">
+                <img src="new-3(2).png">
+                <h3 class="pt-3" style="color: rgb(108, 109, 109);font-size:14px">WATER</h3>
+                <h6>Mineral Water.</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-3">
+                <h3>Top Saver Today</h3>
+
+            </div>
+            <div class="top col-1 pt-2 d-flex">
+                <p style="color: rgb(85, 85, 86);font-size:14px;font-weight:600" class="pe-2">All Offers</p> <img src="arrow.png" class="pt-1"
+                    height="22px" alt="">
+            </div>
+            <div class="h col-1 pt-1 mt-1 d-flex justify-content-center align-items-center"
+                style="background-color: rgb(247, 77, 77);color:rgb(248, 249, 250);border:1px solid rgb(201, 199, 199);width:182px;height: 30px;padding-top:3px">
+                <i class="fa-regular fa-clock fa-sm pe-1 pb-1"></i>
+                <h6 class="" style="font-size: 14px;">Expires in: 06 : 25: 37</h6>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="my container mb-5">
+            <div class="row">
+                <div class="c col-2 mx-2 px-5 pt-3" style="border: 1px solid rgb(207, 205, 205);border-radius:4px">
+                    <img src="1.avif" height="150px">
+                    <h6 style="font-weight: 700;">Britania Slice</h6>
+                    <h6 style="color: rgb(44, 196, 247);font-size:13px">Healthy Bread x 24</h6>
+                    <h6 style="color: rgb(85, 85, 86);font-size:10px">24 pieces/box</h6>
+                    <h6 style="color: rgb(5, 5, 5);font-size:14px;font-weight:600;color:rgb(61, 147, 43)">$49.50</h6>
+                    <h6 style="color: rgb(48, 48, 48);font-size:11px">Sold:30/40</h6>
+                    <h6 style="color: rgb(7, 7, 7);font-size:15px;font-weight:700;color: rgb(61, 147, 43)">Total: $99.0
+                    </h6>
+                    <button class="myBtn1">Add To Cart</button>
+                </div>
+                <div class="c col-2 mx-2 px-5">
+                    <img src="news.png" height="150px">
+                    <h6 style="font-weight: 700;">Fresh Chicken</h6>
+                    <h6 style="color: rgb(15, 16, 16);font-size:13px;">Meat Chicken (10% fat)</h6>
+                    <h6 style="color: rgb(85, 85, 86);font-size:11px">450g</h6>
+                    <h6 style="color: rgb(5, 5, 5);font-size:14px;font-weight:600;color: rgb(61, 147, 43)">$59.50</h6>
+                    <h6 style="color: rgb(8, 8, 8);font-size:11px">Sold:30/40</h6>
+                    
+                    
+
+
+                </div>
+                <div class="c col-2 mx-2 px-5">
+                    <img src="2.png" width="150px" height="150px">
+                    <h6 style="font-weight: 700;">Harvest Gold</h6>
+                    <h6 style="color: rgb(15, 16, 16);font-size:13px;">Healthy Bread</h6>
+                    <h6 style="color: rgb(85, 85, 86);font-size:11px">800g</h6>
+                    <h6 style="color: rgb(5, 5, 5);font-size:14px;font-weight:700;color: rgb(61, 147, 43)">$12.7</h6>
+                    <h6 style="color: rgb(7, 7, 7);font-size:11px">Sold:9/20</h6>
+                   
+                    
+
+                </div>
+                <div class="c col-2 mx-2 px-5">
+                    <img src="orange.jpg" width="150px" height="150px">
+                    <h6 style="font-weight: 700;">Oranges</h6>
+                    <h6 style="color: rgb(15, 16, 16);font-size:13px;">Sweet & Sour</h6>
+                    <h6 style="color: rgb(85, 85, 86);font-size:11px">900g</h6>
+                    <h6 style="color: rgb(5, 5, 5);font-size:14px;font-weight:700;color: rgb(61, 147, 43)">$12.37</h6>
+                    <h6 style="color: rgb(5, 5, 6);font-size:11px">Sold:18/20</h6>
+                    
+                </div>
+                <div class="col-3 text-center pt-3 " style="background-color: rgb(251, 229, 251);">
+                    <h1 style="color: rgb(251, 60, 35);">15% OFF</h1>
+                    <h6 class="pb-4">For new member sign up at <br> the first time.</h6>
+                    <div class="sec-1">
+                       
+                        <input type="text" placeholder="Your Email"> <br>
+                    </div>
+                    <div class="sec-1">
+                       
+                        <input type="password" placeholder="Your Password"> <br>
+                    </div>
+                    <div class="sec-1">
+                        
+                        <input type="password" class="mb-4" placeholder="Re-type Password">
+                    </div>
+                    <button class="myBtn mb-3">Register Now</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: rgb(239, 238, 238);">
+    <div class="container mt-5 py-5">
+        <div class="row">
+            <div class="col-2">
+                <h3>Best Seller</h3>
+
+            </div>
+            <div class="col-1 me-5 pe-5 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Fruits&Vegetables.</p>
+            </div>
+            <div class="col-1 me-5 pe-5 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">FrozenSeafoods.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Raw Meats.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Coffes&Teas.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Pet Foods.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Milks&Dairies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: rgb(239, 238, 238);">
+    <div class="container">
+        <div class="shadman-4 ps-5 pt-5 pb-4 owl-carousel owl-theme " style="background-color: rgb(251, 252, 253);">
+            <div class="zoko item">
+                <h6 class="sm">Save 15%</h6>
+                <img src="news.png">
+                <h4>Chicken Meat</h4>
+                <h6 style="color: rgb(62, 203, 250);">British Beef</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">450g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$59.50</h6>
+            </div>
+
+            <div class="zoko item">
+                <h6 class="sm">Save 19%</h6>
+                <img src="1.avif">
+                <h4>Britania slice</h4>
+                <h6 style="color: rgb(62, 203, 250);">Healthy Bread</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">24 pieces/box</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$49.50</h6>
+            </div>
+            <div class="zoko item">
+                <h6 class="sm">Save 17%</h6>
+                <img src="product4.avif" alt="">
+                <h4>Amul Butter</h4>
+                <h6 style="color: rgb(62, 203, 250);">Fresh Product</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">500g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$39.50</h6>
+            </div>
+            <div class="zoko item">
+                <h6 class="sm">Save 19%</h6>
+                <img src="product5.webp" alt="">
+                <h4>Amul Cream</h4>
+                <h6 style="color: rgb(62, 203, 250);">Fresh Cream</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">500g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$35.50</h6>
+
+            </div>
+            <div class="zoko item">
+                <h6 class="sm">Save 19%</h6>
+                <img src="1.avif">
+                <h4>Britania slice</h4>
+                <h6 style="color: rgb(62, 203, 250);">Healthy Bread</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">24 pieces/box</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$49.50</h6>
+            </div>
+            <div class="zoko item">
+                <h6 class="sm">Save 17%</h6>
+                <img src="product4.avif" alt="">
+                <h4>Amul Butter</h4>
+                <h6 style="color: rgb(62, 203, 250);">Fresh Product</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">500g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$39.50</h6>
+            </div>
+            <div class="zoko item">
+                <h6 class="sm">Save 17%</h6>
+                <img src="product5.webp" alt="">
+                <h4>Amul Cream</h4>
+                <h6 style="color: rgb(62, 203, 250);">Fresh Cream</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">500g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$35.50</h6>
+
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: rgb(239, 238, 238);">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-2">
+                <h3>Just Landing</h3>
+
+            </div>
+            <div class="col-1 me-5 pe-5 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Fruits&Vegetables.</p>
+            </div>
+            <div class="col-1 me-5 pe-5 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">FrozenSeafoods.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Raw Meats.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Coffes&Teas.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Pet Foods.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Milks&Dairies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: rgb(239, 238, 238);">
+    <div class="container">
+        <div class="shadman-5  pt-5 ps-5 pb-4 owl-carousel owl-theme" style="background-color: white;">
+            <div class="zoko item">
+                <img src="new1.jpg" height="150px">
+                <h4>IceCream</h4>
+                <h6 style="color: rgb(62, 203, 250);">Choco Chips </h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">1kg</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$19.7</h6>
+            </div>
+            <div class="zoko item"><img src="product5.webp" height="150px">
+                <h4>Amul Milk</h4>
+                <h6 style="color: rgb(62, 203, 250);">Fresh Milk</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">1L</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$19.50</h6>
+
+            </div>
+            <div class="zoko item"><img src="new3.webp" height="150px" alt="">
+                <h4>Mother Dairy</h4>
+                <h6 style="color: rgb(62, 203, 250);">Rabdi Icecream</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">1kg</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$29.50</h6>
+            </div>
+            <div class="zoko item"><img src="new4.webp" height="150px" alt="">
+                <h4>Amul Paneer</h4>
+                <h6 style="color: rgb(62, 203, 250);">Fresh Product</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">200g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$15.50</h6>
+            </div>
+            <div class="zoko item"><img src="new5.jpg" height="150px" alt="">
+                <h4>Nestle</h4>
+                <h6 style="color: rgb(62, 203, 250);">Masala Maggi</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">500g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$5.50</h6>
+            </div>
+            <div class="zoko item"><img src="new3.webp" height="150px" alt="">
+                <h4>Mother Dairy</h4>
+                <h6 style="color: rgb(62, 203, 250);">Rabdi Icecream</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">1kg</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$29.50</h6>
+            </div>
+            <div class="zoko item"><img src="product5.webp" height="150px">
+                <h4>Amul Milk</h4>
+                <h6 style="color: rgb(62, 203, 250);">Fresh Milk</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">1L</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$19.50</h6>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5" style="background-color: rgb(239, 238, 238);">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-4">
+                <div class="header1">
+                    <h1>Juices</h1>
+                    <p>Lorem ipsum dolor<br>
+                        sit amet. </p>
+
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="header2">
+                    <h1>$9,9</h1>
+                    <h3>Fish Caviar <br> Canned</h3>
+                    <p>250g</p>
+
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="header3">
+                    <h1>olive oil</h1>
+                    <p>Best Product to make <br> your favor.</p>
+                    <p>ONLY</p>
+                    <h6>$12.5</h6>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: rgb(239, 238, 238);">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-3">
+                <h3>Essential Products</h3>
+
+            </div>
+            <div class="col-1 me-5 pe-5 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Fruits&Vegetables.</p>
+            </div>
+            <div class="col-1 me-5 pe-5 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">FrozenSeafoods.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Raw Meats.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Coffes&Teas.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Pet Foods.</p>
+            </div>
+            <div class="col-1 pt-2">
+                <p style="font-size: 14px;font-weight:700;color: rgb(85, 85, 86);">Milks&Dairies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color:rgb(239, 238, 238);">
+    <div class="container">
+        <div class="shadman-5 pt-5 pb-4 ps-5 owl-carousel owl-theme" style="background-color: white;">
+            <div class="zoko item">
+                <img src="nut1.avif" height="150px">
+                <h4>Nutri</h4>
+                <h6 style="color: rgb(62, 203, 250);">Organic Kaju</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">1kg</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$19.7</h6>
+
+            </div>
+            <div class="zoko item"><img src="nut2.jpg" height="150px">
+                <h4>Aaladin</h4>
+                <h6 style="color: rgb(62, 203, 250);">Pistachios</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">450g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$59.50</h6>
+
+            </div>
+            <div class="zoko item"><img src="nut3(3).webp" height="150px" alt="">
+                <h4>Estaa</h4>
+                <h6 style="color: rgb(62, 203, 250);">Masala Kaju</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">450g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$29.50</h6>
+
+            </div>
+            <div class="zoko item"><img src="nut4.webp" height="150px" alt="">
+                <h4>Dry Fruits</h4>
+                <h6 style="color: rgb(62, 203, 250);">Mixed Fruits</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">500g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$39.50</h6>
+            </div>
+            <div class="zoko item"><img src="nut2.jpg" height="150px">
+                <h4>Aaladin</h4>
+                <h6 style="color: rgb(62, 203, 250);">Pistachios</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">450g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$59.50</h6>
+
+            </div>
+            <div class="zoko item"><img src="nut5.webp" height="150px" alt="">
+                <h4>Shora's</h4>
+                <h6 style="color: rgb(62, 203, 250);">Organic Almonds</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">500g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$35.50</h6>
+
+            </div>
+            <div class="zoko item"><img src="nut3(3).webp" height="150px" alt="">
+                <h4>Estaa</h4>
+                <h6 style="color: rgb(62, 203, 250);">Masala Kaju</h6>
+                <h6 style="color: rgb(85, 85, 86);font-size:12px">450g</h6>
+                <h6 style="color: rgb(42, 197, 7);font-size:15px;font-weight:700">$29.50</h6>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid pt-5 pb-4" style="background-color: rgb(239, 238, 238);">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <h2>Health Daily</h2>
+
+            </div>
+            <div class="col-4 pt-2 d-flex justify-content-end">
+                <p style="color: rgb(85, 85, 86); font-size: 15px;" class="pe-2">All Articles</p> <img src="arrow-2.png"
+                    class="pt-1" height="20px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pb-4 " style="background-color: rgb(239, 238, 238);">
+        <div class="shan container">
+            <div class="row">
+                <div class="column col-4 pt-4 pb-2 mb-5" style="background-color: white;">
+                    <img src="health1.png" style="border-radius: 5px;" height="220px" width="370px" alt="">
+                    <div class="shadman pt-3">
+                        <div class="shad">
+                            <h6 style="font-size: 14px;">EXPERIENCES</h6>
+                        </div>
+                        <div class="man">
+                            <h6 style="font-size: 14px;"> March 25 2020</h6>
+                        </div>
+                    </div>
+                    <div class="content1">
+                        <h5 class="pt-1" style="color: rgb(241, 185, 2);font-size: 19px;">Tips to make your cake tasty</h5>
+                        <p class="pt-1" style="color: rgb(85, 85, 86);font-size: 14px;">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Consequuntur, error.</p>
+                    </div>
+
+                </div>
+                <div class="column col-4 pt-4 mb-5 pb-2"
+                    style="background-color: white;border-left:1px solid rgb(227, 226, 226);">
+                    <img src="health2.png" style="border-radius: 5px;" height="220px" width="370px" alt="">
+                    <div class="shadman pt-3">
+                        <div class="shad">
+                            <h6 style="font-size: 14px;">EXPERIENCES</h6>
+                        </div>
+                        <div class="man">
+                            <h6 style="font-size: 14px;">March 25 2020</h6>
+                        </div>
+                    </div>
+                    <div class="content1">
+                        <h5 class="pt-1" style="font-size: 19px;">How to preservation fruits & organics.</h5>
+                        <p class="pt-1" style="color: rgb(156, 156, 157);font-size: 14px;">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Consequuntur, error.</p>
+                    </div>
+
+                </div>
+                <div class="col-3 text-center mb-5 ms-5" style="background-color: rgb(251, 251, 253);">
+                    <h3 class="shop pt-5">Shop faster <br> with Famart App.</h3>
+                    <p class="pt-3" style="color: rgb(85, 85, 86);font-size:15px">Available on both iOS & Android.</p>
+                    <img src="apple.png" class="pt-2"><img src="apple2.png" class="pt-2" alt="">
+                    <div class="images">
+
+                        <div class="img">
+                            <img src="mobnew.png" height="100px" width="100px" alt="">
+                        </div>
+                        <div class="img-2">
+                            <img src="mobnew.png" height="100px" width="100px" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-4">
+        <div class="row justify-content-evenly">
+            <div class="col-2">
+                <div class="icon d-flex">
+                    <img src="free1.png" height="30px" alt="">
+                    <h5 style="font-size: 15px;">Free Shipping</h5>
+                </div>
+                <h6 style="font-size: 13px; color:rgb(85, 85, 86);padding-left:29px">For all orders over $200</h6>
+            </div>
+            <div class="col-2">
+                <div class="icon d-flex">
+                    <img src="free2.png" height="25px" alt="">
+                    <h5 style="font-size: 15px;">1 & 1 Returns</h5>
+                </div>
+                <h6 style="font-size: 13px; color:rgb(85, 85, 86);padding-left:29px">Cancellation after 1 day</h6>
+
+            </div>
+            <div class="col-2">
+                <div class="icon d-flex">
+                    <img src="free3.png" height="25px" alt="">
+                    <h5 style="font-size: 15px;">100% Secure Payment</h5>
+                </div>
+                <h6 style="font-size: 13px; color:rgb(85, 85, 86);padding-left:25px">Gurantee secure payment</h6>
+
+            </div>
+            <div class="col-2">
+                <div class="icon d-flex">
+                    <img src="free4.png" height="25px" alt="">
+                    <h5 style="font-size: 15px;">24/7 Dedicated Support</h5>
+                </div>
+                <h6 style="font-size: 13px; color:rgb(85, 85, 86);padding-left:25px">Anytime & anywhere</h6>
+
+            </div>
+            <div class="col-2">
+                <div class="icon d-flex">
+                    <img src="free5.png" height="25px" alt="">
+                    <h5 style="font-size: 15px;">Daily Offers</h5>
+                </div>
+                <h6 style="font-size: 13px; color:rgb(85, 85, 86);padding-left:32px">Discount up to 70% OFF</h6>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-3">
+                <h6 style="font-weight: 650;font-size:17px">Farmart-Your Online Foods</h6>
+                <p style="font-size: 13px;font-weight:500;color:rgb(85, 85, 86);">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Praesentium minus nulla aliquid accusantium
+                    molestias.</p>
+                <h6 style="font-size: 13px;font-weight:500;color:rgb(85, 85, 86);">Hotline 24/7</h6>
+                <h4>(+965) 7492-4277</h4>
+                <p style="font-size: 13px;font-weight:500;color:rgb(85, 85, 86);">959 Homested Street Eastlake, NYC <br>
+                    support@farmart.com</p>
+            </div>
+            <div class="col-2">
+                <h3 style="font-weight: 700;font-size:16px">Useful Links</h3>
+                <p style="font-weight: 500;font-size:13px;color:rgb(85, 85, 86);">About Us <br> Contact <br> Help Center
+                    <br> Career <br> Policy <br> Flash Sale <br> Official <br>
+                    Sitemap
+                </p>
+            </div>
+            <div class="col-2">
+                <h3 style="font-weight: 700;font-size:16px">Help Center</h3>
+                <p style="font-weight: 500;font-size:13px;color:rgb(85, 85, 86);">Payments <br> Shipping <br> Product
+                    Returns <br> FAQ <br> Checkout <br> Other Issues</p>
+            </div>
+            <div class="col-2">
+                <h3 style="font-weight: 700;font-size:16px">Farmart Business</h3>
+                <p style="font-weight: 500;font-size:13px;color:rgb(85, 85, 86);">Sell On Farmart <br> Affiliate Program
+                    <br> Our Suppliers <br> Accessibility <br> Advertise With Us
+                </p>
+            </div>
+            <div class="col-3">
+                <h3 style="font-weight: 700;font-size:16px">Farmart Business</h3>
+                <p style="font-weight: 500;font-size:13px;color:rgb(85, 85, 86);">Register now on
+                    promotions and coupons <br> Don't worry!We not spam.</p>
+                <input type="email" name="" id="" class="email" placeholder="Email Address">
+                <button class="btn-1">Subscribe</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <p style="font-size: 13px;font-weight:600;color:rgb(85, 85, 86);">2021 Farmart All Rights Reserved</p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <i class="fa-brands mx-2 fa-cc-paypal fa-xl"></i><i class="fa-brands mx-2 fa-cc-mastercard fa-xl"></i><i
+                    class="fa-brands mx-2 fa-cc-visa fa-xl"></i><i class="fa-brands mx-2 fa-wordpress fa-xl"></i><i
+                    class="fa-brands fa-discord mx-2 fa-xl"></i>
+
+            </div>
+            <div class="col-1">
+
+            </div>
+            <div class="col-3">
+                <h6 style="color:rgb(85, 85, 86);font-size:14px">Stay connected:<i
+                        class="fa-brands px-1 fa-facebook"></i><i class="fa-brands px-1 fa-twitter"></i><i
+                        class="fa-brands px-1 fa-google-plus-g"></i><i class="fa-brands px-1 fa-youtube"></i></h6>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper(".card_slider", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 1000,
+
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.shadman-1').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 7
+                }
+            }
+        })
+
+        $('.features').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+
+        $('.shadman-4').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+
+        $('.shadman-5').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

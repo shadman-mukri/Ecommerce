@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container .a{
+    font-size: 12px;
+    padding-left: 65px;
+    color: rgb(156, 154, 154);
+}
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    border-radius: 0px;
+    padding-left: 100px;
+
+}
+
+
+.search-box{
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+    width: 100%;
+    color: rgb(53, 53, 53);
+    height: 36px;
+    border-radius: 5px;
+    border: 2px solid rgb(208, 206, 206);
+    padding: 0px 8px 0px 8px;
+      
+}
+
+.search-box input{
+   
+    color: rgb(5, 5, 5);
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid grey;
+    height: 20px;
+    border: 0px;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-box input::placeholder{
+    
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(190, 188, 190); 
+}
+.content{
+    padding-left: 90px;
+    
+}
+.content span{
+    display: flex;
+    font-weight: 600;
+    font-size: 19px;
+}
+.icon i{
+    padding-left: 60px;
+}
+
+.slider_container .container{
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.card_slider{
+    padding: 50px 0;
+}
+
+.header1{
+    height: 230px;
+    border-radius: 8px;
+    width: 100%;
+    background-image: url(juice-new.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.header1 h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(247, 247, 244);
+    padding-left: 40px;
+    padding-top: 35px;
+}
+
+.header1 p{
+    color:rgb(245, 183, 37);
+    padding-top: 40px;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.header2{
+    height: 230px;
+    border-radius: 10px;
+    background-image: url(fish.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header2 h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(252, 60, 17);
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.header2 h3{
+    color: rgb(244, 246, 248);
+    padding-left: 25px;
+    font-size: 22px;
+}
+
+.header2 p{
+    color:rgb(245, 165, 6);
+    padding-top: 30px;
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.header3{
+    height: 230px;
+    border-radius: 10px;
+    background-image: url(olive.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header3 h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(255, 254, 254);
+    padding-left: 28px;
+    padding-top: 20px;
+}
+.header3 p{
+    color:rgb(254, 254, 254);
+    padding-top: 5px;
+    padding-left: 28px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.header3 h6{
+    color:rgb(254, 254, 254);
+    padding-top: 0px;
+    padding-left: 28px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+.header4{
+    height: 400px;
+    width: 100%;
+    background-image: url(main2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+}
+.header4 h2{
+    padding-top: 22px;
+    padding-left: 50px;
+    font-size: 35px;
+    color: rgb(23, 22, 22);
+    
+
+}
+.header4 p{
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+  }
+
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
+
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
+  .img_box img{
+    position: absolute;
+    height: 400px !important;
+    width: 100%;
+    border-radius: 10px;
+}
+.img_box {
+    height: 450px;
+
+}
+.img_box div {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.img_box .title{
+    font-weight: 400;
+    color: rgb(2, 15, 88);
+
+}
+.img_box .text{
+    color: rgb(2, 15, 88);
+    font-size: 16px;
+}
+
+.btn-s{
+    background-color: rgb(252, 251, 251);
+    margin-left: 55px;
+    font-size: 16px;
+    border-radius: 2px;
+    margin-top: 150px;
+    padding: 4px 5px 5px 5px;
+    width: 90px;
+    color: rgb(3, 46, 132);
+    
+}
+.btn-s1{
+    background-color: rgb(252, 251, 251);
+    padding: 8px 0px 27px 7px;
+    width: 85px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-right: 50px;
+    color: rgb(3, 46, 132);
+}
+
+.swiper-slide .title{
+    font-weight: 1200px;
+}
+
+
+.sh{
+    margin: 0px auto;
+    display: block;
+    width: 70px !important;
+    height: 70px;
+}
+.sha{
+    margin: 0px auto;
+    display: block;
+    width: 55px !important;
+    height: 55px;
+}
+
+.s img{
+    border-radius: 10px;
+    width: 280px !important;
+    height: 180px !important;
+}
+.sc{
+    height: 180px !important;
+}
+.ma{
+    width: 270px !important;
+    padding-top: 28px;
+}
+.my{
+    padding-top: 40px;
+    
+    
+}
+.c{
+    display: grid;
+    justify-content:space-evenly;
+    padding: 5px 0px 30px 1px;
+
+}
+
+.myBtn1{
+    background-color: rgb(251, 177, 40);
+    border: 0;
+    padding: 5px 1px 5px 1px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+.myBtn{
+    background-color: rgb(251, 177, 40);
+    border: 0;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Times New Roman", Georgia, serif;
+
+}
+.z{
+    margin-bottom: 12px;
+    padding: 3px;
+    border: 0;
+}
+.x{
+    margin-bottom: 12px;
+    padding: 3px;
+    border: 0;
+
+}
+
+.zoko{
+    width: 150px !important;
+    
+}
+
+.shadman{
+    display: flex;
+    justify-content: start;
+    padding-right: 10px;
+}
+.shad{
+    padding-left: 0px;
+    padding-right: 14px;
+}
+.man{
+    color: rgb(85, 85, 86);
+    border-left: 1px solid rgb(168, 166, 166);
+    height: 22px;
+    padding-left: 10px;
+}
+.logo{
+    display: flex;
+}
+.sep{
+    display: grid;
+}
+.btn-1{
+    background-color:rgb(252, 179, 32);
+    padding: 5px 20px 5px 14px;
+    border: 0;
+    margin-left: 1px;
+    
+}
+.form-floating{
+    display: flex;
+}
+.h{
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: #4b4a4a;
+}
+
+.sec-1 input{
+    background-color: white;
+    border: 1px solid #7e7e7d;
+    margin-bottom: 7px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius:4px;
+    color: rgb(246, 10, 246);
+    font-weight: 600;
+}
+
+
+.images{
+    display: flex;
+}
+.img{
+    margin-left: 45px;
+    margin-top: 50px;
+}
+.img-2{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.con{
+    padding-top: 50px;
+}
+.sm{
+    color: white;
+    background-color: rgb(251, 60, 35);
+    padding: 0px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    padding-bottom: 2px;
+    width: 65px;
+    font-size: 13px;
+    
+}
+.shadman-1 .owl-nav{
+    position: absolute;
+    right: 120px;
+    top: -60px;
+}
+.shadman-1 .owl-nav i:hover{
+    box-shadow: 0 0 5px orange,
+    0 0 10px orange;
+    background-color: rgb(250, 180, 50);
+}
+.shadman-1 .owl-nav i{
+    background: orange !important;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.features .owl-nav{
+    position: absolute;
+    right: 120px;
+    top: -75px;
+
+}
+.features .owl-nav i:hover{
+    box-shadow: 0 0 5px orange,
+    0 0 10px orange;
+    background-color: rgb(250, 180, 50);
+
+}
+.features .owl-nav i{
+    background: orange !important;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.shadman-4 .owl-nav{
+    position: absolute;
+    right: 120px;
+    top: -105px;
+}
+.shadman-4 .owl-nav i:hover{
+    box-shadow: 0 0 5px orange,
+    0 0 10px orange;
+    background-color: rgb(250, 180, 50);
+
+}
+.shadman-4 .owl-nav i{
+    background: orange !important;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.shadman-5 .owl-nav {
+    position: absolute;
+    right: 120px;
+    top: -105px;
+}
+
+.shadman-5 .owl-nav i{
+    background: orange !important;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.shadman-5 .owl-nav i:hover{
+    box-shadow: 0 0 5px orange,
+    0 0 10px orange;
+    background-color: rgb(250, 180, 50);
+
+}
+/* .owl-carousel .owl-nav {
+    position: absolute;
+    right: 120px;
+    top: -100px;
+ 
+    
+  } */
+
+.swiper-slide .text{
+    margin-top: 20px;
+}
+.email{
+    padding: 3px 0px 3px 2px;
+}
+.column{
+    padding-left: 34.5px;
+}
+
+.shop{
+    font-size: 25px;
+    font-weight: 900px;
+}
+.shan{
+    margin-left: 100px;
+}
